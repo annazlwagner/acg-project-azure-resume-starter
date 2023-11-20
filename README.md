@@ -47,3 +47,8 @@ The back-end is an [HTTP triggered](https://docs.microsoft.com/en-us/azure/azure
 - This is how you can deploy an [Azure Function to Azure with GitHub Actions.](https://github.com/madebygps/cgc-azure-resume/blob/main) Used in backend.main.yml
 - [Implement .NET testing in GitHub Actions.](https://docs.github.com/en/actions/guides/building-and-testing-net)
 
+
+## First Steps
+- This is about my 5th attempt.
+- Frontend folder contains the website.
+- The main.js created the visitor counter code.
