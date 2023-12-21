@@ -1,3 +1,4 @@
+//going through ACG to align naming conventions/merge w/my own from previous iterations of my project
 //when does this getVisitCount actually get called?
 window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
@@ -21,7 +22,7 @@ const getVisitCount = () => {
     //^declare a variable that holds count data. Can be whatever # bc it will be changed below
 
     
-    fetch(functionApiUrl).then(response => { //fetch the data from that URL that we're providing in functionApi 
+    fetch(localfunctionApi).then(response => { //fetch the data from that URL that we're providing in functionApi 
         return response.json() //then grab the response & return the response.JSON
     }).then(response =>{ //grab the response
         console.log("Website called function API :D"); //log a message to the console for debugging purposes

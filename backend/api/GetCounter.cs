@@ -9,8 +9,10 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
-//^System.Net.Http bc "HttpResponseMessage" below
+//^System.Net.Http bc public static "HttpResponseMessage" Run( below
 
+//Working on aligning w/the old iteration. 
+//After this, need to align/integrate naming conventions w/acg
 namespace Company.Function
 {
     public static class GetCounter
@@ -28,8 +30,10 @@ namespace Company.Function
             //JK!!! "Counter" count. & "Counter" updatedCounter. Bc it seems "Counter" is a special recognized word we must use.
 
             //^^this 1st binding allows us to retrieve an item tht has the Id = "1".
+
             [CosmosDB(databaseName:"capstone", containerName:"counter", Connection = "AzureSiteConnectionString", Id = "1", PartitionKey = "1")] out Counter updatedCounter,
             //We're also creating an output binding bc the count will be continuously changing.
+        
 
             ILogger log)
         {
