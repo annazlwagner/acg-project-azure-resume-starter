@@ -4,7 +4,8 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 }) //when the content is loaded, go & run this event - getVisitCount
 
-const functionApiUrl = 'https://getannasitecounter.azurewebsites.net/api/GetCounter?code=4nwjAzhPAidzQn0Vkoq7ZvniwVC_K7NEK4-zEj4UStR1AzFuVmnFrQ== '
+const functionApiUrl = 'https://getannasitecounter.azurewebsites.net/api/GetCounter?code=4nwjAzhPAidzQn0Vkoq7ZvniwVC_K7NEK4-zEj4UStR1AzFuVmnFrQ== ';
+//12/22/23 I just put that ";" at the end of this!!! Hope that'll fix some stuff
 //^this the url from the function app, function in Azure portal. ^
 //^this is the PRODUCTION URL (url from function)
 
